@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis reclamos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="building.svg">
+</head>
+<body>
+    
+    <!-- TO DO:
+    Ver tema centrado del titulo del header en menos de 575px
+    
+    -->
+
+
+    <!-- Header ya logeado in -->
+    <div  class="container-lg p-3 bg-purple-30 fondo" style="background-color: #DEB887;">
+        <div class="row ">
+            
+            <div class="text-center align-self-center fw-bold ml-4 mb-4 " style="font-size: x-large;">
+                <i class="bi bi-building"></i>
+                Infinity
+            </div>
+
+            <div class=" text-center p-1" >
+                <button type="button" class="btn btn-outline-dark btn-sm"><a class="text-decoration-none" href="index.html" style="color: var(--bs-dropdown-link-color);">Home</a> </button>
+               
+                <button class=" dropdown btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reclamos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="generarReclamoComun.html">Generar reclamo sobre espacio comun</a></li>
+                    <li><a class="dropdown-item" href="generarReclamoUnidad.html">Generar reclamo sobre unidad</a></li>
+                    <li><a class="dropdown-item" href="misReclamos.html">Mis reclamos</a></li>
+                
+                </ul>
+                  
+                
+                <button type="button" class="btn btn-outline-dark btn-sm">Cerrar sesion</button>
+            </div>
+            
+        </div>
+       
+    </div>
+
+    <div class="container">
+        <h1 class="py-4"><i class="bi bi-clipboard2-minus p-2"></i>Mis reclamos</h1>
+    
+        <h4 class="p-2"><i class="bi bi-funnel"></i>Filtrar por:</h4>
+        <div class="m-3">
+            
+            <label for="todo">
+                <input class="m-2" type="radio" name="filtro" id="todo" checked> Todos los reclamos
+            </label>
+            
+            <label for="nuevos">
+                <input class="m-2" type="radio" name="filtro" id="nuevos">Nuevos
+            </label>
+            
+            <label for="abiertos">
+                <input class="m-2" type="radio" name="filtro" id="abiertos">Abiertos
+            </label>
+
+            <label for="cerrados">
+                <input class="m-2" type="radio" name="filtro" id="cerrados">Cerrados
+            </label>
+            
+			<label for="proceso">
+                <input class="m-2" type="radio" name="filtro" id="proceso">En proceso
+            </label>
+            
+            <label for="anulado">
+                <input class="m-2" type="radio" name="filtro" id="anulado">Anulado
+            </label>
+
+        </div>
+        
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center" >
+        
+        <div class="card  mb-3 m-4" style="max-width: 18rem; border: solid 2px #DEB887 ">
+            <div class="card-header" style="border-bottom: solid 1px #DEB887;">Titulo1</div>
+            <div class="card-body">
+                <p class="card-text">Edificio: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Piso: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Depto: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Descripcion:</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Estado:</p>
+            </div>
+            
+        </div>
+
+        <div class="card  mb-3 m-4" style="max-width: 18rem; border: solid 2px #DEB887 ">
+            <div class="card-header" style="border-bottom: solid 1px #DEB887;">Titulo2</div>
+            <div class="card-body">
+                <p class="card-text">Edificio: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Piso: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Depto: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Descripcion:</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Estado:</p>
+            </div>
+            
+        </div>
+
+        <div class="card  mb-3 m-4" style="max-width: 18rem; border: solid 2px #DEB887 ">
+            <div class="card-header" style="border-bottom: solid 1px #DEB887;">Titulo3</div>
+            <div class="card-body">
+                <p class="card-text">Edificio: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Piso: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Depto: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Descripcion:</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Estado:</p>
+            </div>
+        </div>
+
+        <div class="card  mb-3 m-4" style="max-width: 18rem; border: solid 2px #DEB887 ">
+            <div class="card-header" style="border-bottom: solid 1px #DEB887;">Titulo4</div>
+            <div class="card-body">
+                <p class="card-text">Edificio: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Piso: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Depto: </p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Descripcion:</p>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Estado:</p>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        
+    </style>
+</body>
+</html>

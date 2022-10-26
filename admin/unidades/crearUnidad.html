@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando nuevo edificio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="../../building.svg">
+</head>
+<body>
+  
+    <!-- TO DO:
+    Ver tema centrado del titulo del header en menos de 575px
+    
+    -->
+
+   <!-- Header ya logeado in como ADMIN -->
+   <div  class="container-lg p-3 bg-purple-30 fondo" style="background-color: #DEB887;">
+        <div class="row ">
+            
+            <div class="text-center align-self-center fw-bold ml-4 mb-4 " style="font-size: x-large;">
+                <i class="bi bi-building"></i>
+                Infinity
+            </div>
+
+            <div class=" text-center p-1" >
+                <button type="button" class="btn btn-outline-dark btn-sm"><a class="text-decoration-none" href="../../index.html" style="color: var(--bs-dropdown-link-color);">Home</a></button>
+            
+                <button class=" dropdown btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reclamos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../../generarReclamoComun.html">Generar reclamo sobre espacio comun</a></li>
+                    <li><a class="dropdown-item" href="../../generarReclamoUnidad.html">Generar reclamo sobre una unidad</a></li>
+                    <li><a class="dropdown-item" href="../../misReclamos.html">Mis reclamos</a></li>
+                </ul>
+                
+                <!-- Edificios -->
+                <button class=" dropdown btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Edificios
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../edificios/crearEdificio.html">Añadir nuevo</a></li>
+                    <li><a class="dropdown-item" href="../edificios/listaEdificios.html">Ver todos</a></li>
+                
+                </ul>
+
+                 <!-- Unidades -->
+                 <button class=" dropdown btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Unidades
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="crearUnidad.html">Añadir nueva</a></li>
+                    <li><a class="dropdown-item" href="listaUnidades.html">Ver todas</a></li>
+                
+                </ul>
+
+                <!-- Dueños -->
+                <button class=" dropdown btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dueños
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../dueños/crearDueño.html">Añadir nueva</a></li>
+                    <li><a class="dropdown-item" href="../dueños/listaDueño.html">Ver todas</a></li>
+                
+                </ul>
+
+                <!-- Inquilinos -->
+                <button class=" dropdown btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Inquilinos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../inquilinos/crearInquilino.html">Añadir nueva</a></li>
+                    <li><a class="dropdown-item" href="../inquilinos/listaInquilinos.html">Ver todas</a></li>
+                
+                </ul>
+                
+                <button type="button" class="btn btn-outline-dark btn-sm">Cerrar sesion</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="p-2">
+
+        <form class="p-5 container mt-5" style="max-width: 760px; border: solid 2px #DEB887;">
+
+            <h1 class="text-lg-start text-bold">Creando nueva unidad</h1>
+    
+            <!-- Codigo se genera automaticamente -->
+            <div class="mb-3">
+                <label for="" class="form-label">Edificio al que pertenece</label>
+                <input type="text" class="form-control" >
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Numero</label>
+              <input type="text" class="form-control" >
+            </div>
+    
+            <div class="mb-3">
+                <label for="" class="form-label">Metros cuadrados</label>
+                <input type="text" class="form-control" >
+            </div>
+
+          
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Dueño</label>
+                <select class="form-select" aria-label="Seleccionar dueño">
+
+                    <option value="pablo">Pablo</option>
+                    <option value="pedro">Pedro</option>
+                    <option value="juan">Juan</option>
+                    <option value="carlos">Carlos</option>
+                    
+                </select>
+            </div>
+     
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Estado</label>
+                <select class="form-select" aria-label="Seleccionar estado">
+                    <option value="alquilada">Alquilada</option>
+                    <option value="hab">Habitada</option>
+                    <option value="enp">Libre</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Informacion extra</label>
+            </div>
+    
+            <button type="button" class="btn fw-semibold mt-5" style="border-color: #DEB887; color: #DEB887;">
+                Crear
+            </button>
+            
+    
+        </form>
+
+        
+
+    </div>
+
+
+</body>
+</html>
